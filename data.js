@@ -4,7 +4,7 @@ const people = [
   { id: 3, label: "Alex" },
   { id: 4, label: "Liza" },
   { id: 5, label: "Neha" },
-  { id: 4, label: "Josie" }
+  { id: 6, label: "Josie" }
 ];
 
 const relationships = [
@@ -19,7 +19,7 @@ const relationships = [
     to: 4,
     color: "hotpink",
     dashes: true,
-    label: "Hookup"
+    label: "Hookup+"
   },
   {
     from: 3,
@@ -31,7 +31,7 @@ const relationships = [
     from: 2,
     to: 3,
     color: "red",
-    label: "Hookup"
+    label: "Hookup+"
   },
   {
     from: 4,
@@ -43,12 +43,12 @@ const relationships = [
     from: 2,
     to: 3,
     color: "red",
-    label: "Hookup"
+    label: "Hookup+"
   },
   {
     from: 1,
-    to: 5,
+    to: 6,
     color: "red",
-    label: "Hookup"
+    label: "Hookup+"
   }
 ];

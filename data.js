@@ -4,7 +4,8 @@ const people = [
   { id: 3, label: "Alex" },
   { id: 4, label: "Liza" },
   { id: 5, label: "Neha" },
-  { id: 6, label: "Josie" }
+  { id: 6, label: "Josie" },
+  { id: 7, label: "Alaya" }
 ];
 
 const relationships = [
@@ -51,6 +52,20 @@ const relationships = [
   {
     from: 1,
     to: 6,
+    color: "hotpink",
+    dashes: true,
+    label: "Hookup+"
+  },
+  {
+    from: 7,
+    to: 6,
+    color: "hotpink",
+    dashes: true,
+    label: "Hookup"
+  },
+  {
+    from: 2,
+    to: 7,
     color: "hotpink",
     dashes: true,
     label: "Hookup+"

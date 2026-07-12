@@ -30,25 +30,29 @@ const relationships = [
   {
     from: 2,
     to: 3,
-    color: "red",
+    color: "hotpink",
+    dashes: true,
     label: "Hookup+"
   },
   {
     from: 4,
     to: 5,
-    color: "red",
+    color: "hotpink",
+    dashes: true,
     label: "Hookup"
   },
   {
-    from: 2,
-    to: 3,
-    color: "red",
+    from: 5,
+    to: 6,
+    color: "hotpink",
+    dashes: true,
     label: "Hookup+"
   },
   {
     from: 1,
     to: 6,
-    color: "red",
+    color: "hotpink",
+    dashes: true,
     label: "Hookup+"
   }
 ];

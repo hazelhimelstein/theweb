@@ -68,6 +68,6 @@ const relationships = [
     to: 7,
     color: "hotpink",
     dashes: true,
-    label: "Hookup+"
+    label: "Hookup"
   }
 ];

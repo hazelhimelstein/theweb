@@ -17,6 +17,29 @@
   placeholder="Search The Web"
 />
 
+<div id="controls">
+
+  <h2>Add Relationship</h2>
+
+  <input id="person1" placeholder="First person">
+
+  <input id="person2" placeholder="Second person">
+
+  <select id="type">
+    <option value="roommates">Roommates</option>
+    <option value="hookup">Hookup</option>
+    <option value="hookup+">Hookup+</option>
+    <option value="relationship">Relationship</option>
+  </select>
+
+  <button onclick="addRelationship()">
+    Add
+  </button>
+
+</div>
+
+<div id="network"></div>
+  
 <div id="network"></div>
 
 <script src="data.js"></script>

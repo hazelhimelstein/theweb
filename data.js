@@ -1,6 +1,6 @@
 const people = [
   { id: 1, label: "Hazel" },
-  { id: 2, label: "Brooke" },
+  { id: 2, label: "Brooke F" },
   { id: 3, label: "Alex" },
   { id: 4, label: "Liza" },
   { id: 5, label: "Neha" },

@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The Web</title>
+    <title>Relationship Map</title>
 
-  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 
-  <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Gay Girl Circle</h1>
-
-<input
-  id="search"
-  placeholder="Search The Web"
-/>
+<h1>Relationship Map</h1>
 
 <div id="controls">
 
-  <h2>Add Relationship</h2>
+    <input id="person1" placeholder="Person 1">
 
-  <input id="person1" placeholder="First person">
+    <input id="person2" placeholder="Person 2">
 
-  <input id="person2" placeholder="Second person">
 
-  <select id="type">
-    <option value="Roommates">Roommates</option>
-    <option value="Hookup">Hookup</option>
-    <option value="Hookup+">Hookup+</option>
-    <option value="Relationship">Relationship</option>
-  </select>
+    <select id="type">
 
-  <button onclick="addRelationship()">
-    Add
-  </button>
- 
-  <button onclick="localStorage.clear(); location.reload();">
-    Reset Data
-  </button>
+        <option value="roommates">
+            Roommates
+        </option>
 
-  <button onclick="downloadImage()">
-  Save Image
-  </button>
+        <option value="hookup">
+            Hookup
+        </option>
+
+        <option value="hookup+">
+            Hookup+
+        </option>
+
+        <option value="relationship">
+            Relationship
+        </option>
+
+    </select>
+
+
+    <button onclick="addRelationship()">
+        Add Relationship
+    </button>
+
+
+    <button onclick="clearMap()">
+        Clear Map
+    </button>
+
+
+    <button onclick="downloadImage()">
+        Save Image
+    </button>
 
 </div>
 
-<div id="network"></div>
-  
+
 <div id="network"></div>
 
-<script src="data.js"></script>
+
 <script src="script.js"></script>
 
 </body>

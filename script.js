@@ -28,6 +28,14 @@ const network = new vis.Network(
   }
 );
 
+edges.add({
+  from: 1,
+  to: 2,
+  label: "test",
+  color: {
+    color: "red"
+  }
+});
 
 function getColor(type){
 

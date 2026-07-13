@@ -20,14 +20,35 @@ const edges = new vis.DataSet(
 const network = new vis.Network(
   container,
   {
-    nodes,
-    edges
+    nodes: nodes,
+    edges: edges
   },
   {
     physics:true
   }
 );
 
+
+function getColor(type){
+
+  if(type === "roommates"){
+    return "green";
+  }
+
+  if(type === "hookup"){
+    return "pink";
+  }
+
+  if(type === "hookup+"){
+    return "purple";
+  }
+
+  if(type === "relationship"){
+    return "red";
+  }
+
+  return "black";
+}
 
 
 function addRelationship(){
